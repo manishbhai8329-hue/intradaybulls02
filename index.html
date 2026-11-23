@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=183cf916-b5ee-4701-a2d5-aeff28580236
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#160d29">
+<meta name="description" content="Value Bull Insights by Dinesh Kumar. Telugu and English stock market education, financial awareness and risk management learning.">
+<title>Value Bull Insights | Dinesh Kumar</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1477139804368581');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1477139804368581&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root{
+  --bg:#160d29;
+  --purple:#2b1850;
+  --lime:#c8f76a;
+  --white:#faf7ff;
+  --muted:#d2c7e4;
+}
+*{box-sizing:border-box}
+html,body{
+  width:100%;
+  min-height:100%;
+  margin:0;
+}
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:system-ui,-apple-system,
+    "Noto Sans Telugu","Nirmala UI",
+    "Gautami",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.screen{
+  width:100%;
+  min-height:100vh;
+  min-height:100svh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  background:
+    radial-gradient(ellipse at 0% 0%,#6840b64a,transparent 48%),
+    radial-gradient(ellipse at 100% 100%,#a6d65b24,transparent 50%),
+    linear-gradient(145deg,#251441,#110a21);
+}
+.card{
+  position:relative;
+  width:100%;
+  max-width:395px;
+  padding:clamp(12px,2.5vh,20px) 17px;
+  border:1px solid #c8f76a42;
+  border-radius:24px;
+  background:linear-gradient(155deg,#3a235e,#251640 65%,#1c1133);
+  box-shadow:0 20px 65px #0009,inset 0 1px 0 #ffffff17;
+  text-align:center;
+}
+.card:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:25%;
+  right:25%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,var(--lime),transparent);
+}
+.top-tag{
+  display:inline-block;
+  margin-bottom:11px;
+  padding:5px 11px;
+  border:1px solid #c8f76a3d;
+  border-radius:30px;
+  color:var(--lime);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.8px;
+}
+.logo{
+  width:clamp(66px,10vh,84px);
+  height:clamp(66px,10vh,84px);
+  margin:0 auto 11px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border:3px solid var(--lime);
+  border-radius:50%;
+  background:linear-gradient(145deg,#69469b,#2b1850);
+  box-shadow:0 0 0 5px #c8f76a12,0 0 25px #c8f76a42;
+}
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.logo span{
+  display:none;
+  color:var(--lime);
+  font-size:22px;
+  font-weight:950;
+}
+.brand-kicker{
+  margin:0 0 5px;
+  color:#e0cfff;
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:1.3px;
+}
+h1{
+  margin:0;
+  font-size:clamp(23px,6.2vw,31px);
+  line-height:1.2;
+  font-weight:950;
+  letter-spacing:-.5px;
+}
+h1 span{color:var(--lime)}
+.founder{
+  margin:7px 0 0;
+  color:#e6d8ff;
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.6px;
+}
+.headline{
+  margin:14px auto 7px;
+  color:#fffaff;
+  font-size:clamp(15px,4.2vw,18px);
+  line-height:1.6;
+  font-weight:850;
+}
+.description{
+  max-width:345px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:11.5px;
+  line-height:1.65;
+}
+.features{
+  display:grid;
+  gap:7px;
+  margin:15px 0;
+  text-align:left;
+}
+.feature{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 11px;
+  border:1px solid #c8f76a25;
+  border-radius:11px;
+  background:#ffffff08;
+  color:#f5edff;
+  font-size:11px;
+  line-height:1.5;
+}
+.feature-icon{
+  width:28px;
+  height:28px;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  background:#c8f76a17;
+  font-size:14px;
+}
+.cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:54px;
+  padding:12px 6px;
+  border:1px solid #e5ffb7;
+  border-radius:13px;
+  background:linear-gradient(110deg,#e4ffad,#c8f76a,#a9db45);
+  color:#24340c;
+  text-decoration:none;
+  text-align:center;
+  font-size:clamp(11px,3.5vw,14px);
+  font-weight:950;
+  line-height:1.3;
+  box-shadow:0 0 20px #c8f76a60;
+  animation:glow 2.7s ease-in-out infinite;
+  cursor:pointer;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+@keyframes glow{
+  0%,100%{box-shadow:0 0 12px #c8f76a40}
+  50%{box-shadow:0 0 27px #c8f76a85,0 0 38px #c8f76a25}
+}
+.cta:focus-visible{
+  outline:3px solid white;
+  outline-offset:3px;
+}
+.timer{
+  margin:10px 0 0;
+  color:#e0d5ed;
+  font-size:11px;
+  line-height:1.5;
+}
+.timer strong{
+  color:var(--lime);
+  font-size:15px;
+  font-variant-numeric:tabular-nums;
+}
+.note{
+  margin:7px 0 0;
+  color:#e2d9ec;
+  font-size:10px;
+  font-weight:650;
+}
+.disclaimer{
+  margin:12px 0 0;
+  padding-top:10px;
+  border-top:1px solid #ffffff20;
+  color:#d6cce3;
+  font-size:10px;
+  line-height:1.55;
+}
+.disclaimer b{color:var(--lime)}
+
+@media(max-width:350px){
+  .card{padding-left:12px;padding-right:12px}
+  h1{font-size:21px}
+  .feature{font-size:10px}
+}
+@media(max-height:700px){
+  .card{padding-top:10px;padding-bottom:10px}
+  .top-tag{margin-bottom:6px}
+  .logo{width:56px;height:56px;margin-bottom:6px}
+  h1{font-size:22px}
+  .headline{margin-top:8px;font-size:13px}
+  .description{font-size:10.5px;line-height:1.45}
+  .features{gap:5px;margin:9px 0}
+  .feature{padding:6px 8px}
+  .feature-icon{width:24px;height:24px}
+  .cta{min-height:47px}
+  .timer{margin-top:6px}
+  .disclaimer{margin-top:7px;padding-top:6px}
+}
+@media(max-height:530px){
+  .screen{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+  .cta{animation:none}
+}
+</style>
+</head>
+
+<body>
+<div class="screen">
+<main class="card">
+
+  <div class="top-tag">
+    TELUGU • ENGLISH • FINANCIAL EDUCATION
+  </div>
+
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="https://github.com/manishbhai8329-hue/intradyimage/releases/download/yk/intra.jpg"
+      alt="Value Bull Insights logo"
+      width="84" height="84"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span aria-hidden="true">VB</span>
+  </div>
+
+  <p class="brand-kicker">WELCOME TO</p>
+
+  <h1>INTRADAYBULLS<br><span>INSIGHTS</span></h1>
+
+  <p class="founder">INTRADAYBULLS</p>
+
+  <h2 class="headline">
+    స్టాక్ మార్కెట్‌ను అర్థం చేసుకోండి.<br>
+    జ్ఞానంతో ముందుకు సాగండి.
+  </h2>
+
+  <p class="description">
+    స్టాక్ మార్కెట్ ప్రాథమిక అంశాలు,
+    చార్ట్ కాన్సెప్ట్స్ మరియు రిస్క్ అవగాహన
+    గురించి సరళమైన విద్యా సమాచారం.
+    Learn market fundamentals in Telugu &amp; English.
+  </p>
+
+  <section class="features" aria-label="Learning topics">
+    <div class="feature">
+      <span class="feature-icon" aria-hidden="true">📘</span>
+      Stock Market Basics • స్టాక్ మార్కెట్ ప్రాథమికాలు
+    </div>
+    <div class="feature">
+      <span class="feature-icon" aria-hidden="true">📊</span>
+      Chart Learning • చార్ట్ అవగాహన
+    </div>
+    <div class="feature">
+      <span class="feature-icon" aria-hidden="true">🛡️</span>
+      Risk Awareness • రిస్క్ అవగాహన
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <a id="joinBtn" class="cta"
+    href="https://t.me/+4lv9MQQU2OBkMjM1">
+    JOIN FREE TELEGRAM COMMUNITY
+  </a>
+
+  <p class="timer" id="timerText">
+    Telegram ఛానల్ తెరవడానికి
+    <strong id="seconds">10</strong> సెకన్లు
+  </p>
+
+  <p class="note">
+    Free Learning • Telugu &amp; English • Financial Awareness
+  </p>
+
+  <p class="disclaimer">
+    <b>Disclaimer / నిరాకరణ:</b>
+    ఈ సమాచారం విద్యా ప్రయోజనాల కోసం మాత్రమే.
+    ఇది పెట్టుబడి సలహా కాదు.
+    ట్రేడింగ్‌లో మూలధనం నష్టపోయే ప్రమాదం ఉంది.
+    Educational purposes only. No guaranteed returns
+    or buy/sell recommendations.
+  </p>
+
+</main>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  const telegram="https://t.me/+4lv9MQQU2OBkMjM1";
+  const TIMER_SECONDS=10;
+  const AUTO_REDIRECT=true;
+
+  const button=document.getElementById("joinBtn");
+  const seconds=document.getElementById("seconds");
+  const timerText=document.getElementById("timerText");
+
+  const deadline=performance.now()+TIMER_SECONDS*1000;
+
+  let stopped=false;
+  let interval=null;
+
+  function trackStandard(name){
+    try{
+      if(typeof window.fbq==="function"){
+        window.fbq("track",name);
+      }
+    }catch(error){
+      console.warn("Meta event error:",error);
+    }
+  }
+
+  function trackCustom(name){
+    try{
+      if(typeof window.fbq==="function"){
+        window.fbq("trackCustom",name);
+      }
+    }catch(error){
+      console.warn("Meta custom event error:",error);
+    }
+  }
+
+  function stopTimer(){
+    stopped=true;
+    if(interval!==null){
+      clearInterval(interval);
+      interval=null;
+    }
+  }
+
+  // MANUAL CTA CLICK
+  button.addEventListener("click",function(event){
+    if(event.defaultPrevented)return;
+
+    if(
+      event.ctrlKey||
+      event.metaKey||
+      event.shiftKey||
+      event.altKey||
+      (event.button!==0&&event.detail!==0)
+    )return;
+
+    stopTimer();
+
+    trackStandard("Subscribe");
+    trackCustom("CTA_Click");
+
+    // Immediate native navigation.
+    // No artificial delay or cooldown.
+  });
+
+  // AUTO REDIRECT
+  function updateCountdown(){
+    if(stopped)return;
+
+    const remaining=Math.max(
+      0,
+      Math.ceil((deadline-performance.now())/1000)
+    );
+
+    seconds.textContent=remaining;
+
+    if(remaining===0){
+      stopTimer();
+      timerText.textContent="Opening Telegram Channel...";
+      trackCustom("AutoRedirect");
+      window.location.assign(telegram);
+    }
+  }
+
+  if(!AUTO_REDIRECT){
+    timerText.hidden=true;
+    return;
+  }
+
+  interval=setInterval(updateCountdown,200);
+  updateCountdown();
+
+  document.addEventListener("visibilitychange",function(){
+    if(!document.hidden)updateCountdown();
+  });
+
+  window.addEventListener("pagehide",stopTimer);
+})();
+</script>
+</body>
+</html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="183cf916-b5ee-4701-a2d5-aeff28580236" data-app-host="app.netlify.com" data-account-tier="free"></script>
